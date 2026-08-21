@@ -1,0 +1,34 @@
+.Header
+{
+    font-family:monospace;
+    font-size: 47px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.Navigation_Buttons
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    
+    
+}
+
+.Institution_Name
+{
+    width: 500px;
+    display: inline-block;
+}
+
+/* .Past_Projects
+{
+    margin-top: 90px;
+}
+
+.Current_Projects 
+{
+    margin-top: 170px;
+} */

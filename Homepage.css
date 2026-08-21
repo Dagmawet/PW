@@ -1,0 +1,93 @@
+.Header
+{
+    font-family: Sekuya, sans-serif;
+    font-size: 35px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.categories
+{
+    /* a layout organizer = flex. Center the categories and personalize the font display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-width: 700;
+    font-size: 20px;
+    padding-top: 100px;
+    
+}
+
+button
+{
+    /* Padding for each button for visual preferences  
+        "Spacing on the inside of an element = padding"*/
+    padding-top: 300px;
+    padding-bottom: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+    /*how fast the showdow and color show after being hovered over*/
+    transition: box-shadow 0.15s, color 0.7s;
+}
+
+button:hover
+{
+    /* when hovering, change the color of the letters, make the letter larger
+        change the background, and create a shadow */
+    color: black;
+    font-size: x-large;
+    background-color: rgb(230, 241, 243);
+    box-shadow: 2px 5px 10px rgba(51, 146, 236, 0.15);
+}
+.Education
+{
+    /* Set how much space there is between the words, a way to preserve the space since spaces are automatically ignored 
+        "Spacing on the ouside of an element = margin"*/
+    margin-right: 20px;
+
+    
+}
+
+.Education:hover
+{
+    /* adding further padding to keep all hovering similar 
+        theory: the other 2 appear larger without this specification because 
+        when they change from large to x-large, they take up 2 lines while Education does not */
+    padding-top: 310px;
+    padding-bottom: 310px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+    
+}
+
+.Past_Projects 
+{
+    /* Set how much space there is between the words, a way to preserve the space since spaces are automatically ignored */
+    margin-right: 10px;
+   
+    
+}
+
+
+.Current_Projects
+{
+    /* Set how much space there is between the words, a way to preserve the space since spaces are automatically ignored */
+    margin-left: 5px;
+   
+    
+    
+}
+
+.Education-image
+{
+    /* Set how much space there is between the words, a way to preserve the space since spaces are automatically ignored */
+    width: 5%;
+    margin-left: 8px;
+    object-position: top;
+    
+}
