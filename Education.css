@@ -1,6 +1,6 @@
 .Header
 {
-    font-family:monospace;
+    font-family:monospace, sans-serif;
     font-size: 47px;
     display: flex;
     justify-content: center;
@@ -19,16 +19,119 @@
 
 .Institution_Name
 {
-    width: 500px;
+    
+    display: block;
+    text-align: center;
+}
+
+/* Masters field */
+.Masters_title
+{
+    text-align: center;
+   
+}
+
+.Masters_summary
+{
+    display: block;
+    text-align: center;
+    
+}
+
+.Masters_Description
+{
+    /* flexbox */
+    display:flex;
+
+    /* line course and skill at the tops --> vertical-aline top */
+    align-items: flex-start;
+    
+    /* create 50px gap/space between courses and skills */
+    gap: 50px;
+}
+
+.Masters_Courses
+{
+    /* Skills = 400 px  and 50px gap then calculate the course width by ( width of device - 400 - 50); dynamic to different devices and limits hardcoding
+            "felxibile given the remaining space"
+    */
+   flex: 1;
+    
+}
+
+.Courses_highlights
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: -10px;
+}
+
+.IS_name, .SS_name, .NS_name, .DA_name, .LB_name
+{
+    text-align: center;
+}
+.IS, .SS, .NS, .DA, .LB
+{
     display: inline-block;
+
+    /* take 45% of the parent box */
+    width: 45%;
+
+    /* install spacing between each course description 
+        margin: 2% == 2% margin on all side : top, bottom, left, right
+            But be careful how you calculate this: 
+                45% + 2% + 45% + 2% = 94% < 100% --> good 
+                45% + 5% + 45% + 5% = 100% --> bad, it will not fit in the parent box and will go to the next line
+
+        ALSO, THIS IS ABOUT IF IT FITS IN THE SAME ROW: meaning that it width + margin should always be less  
+        */
+    margin:2%;
+    vertical-align: top;
 }
 
-/* .Past_Projects
+
+
+.Masters_Skills
 {
-    margin-top: 90px;
+    /* flex = flexible to change according to available space 
+            FLEXBOX PRINCIPLE: tries to make things fit so if there is not enough spaces, it will automatically change the width 
+                flex-shrink: 0  --> prevents the shrinking. If it was 1, then you gave it permission to shrink 
+    */
+    flex-shrink: 0;
+    width: 400px;
+   
+  
 }
 
-.Current_Projects 
+.SkillsList
 {
-    margin-top: 170px;
-} */
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* Bachelors field */
+
+.Bachelors_Description
+{
+    display:flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+.Bachelors
+{
+    display: block;
+    text-align: center;
+}
+
+.Bachelors_summary
+{
+    display: block;
+    text-align: center;
+}
+
