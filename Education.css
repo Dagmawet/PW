@@ -17,7 +17,7 @@
     
 }
 
-.Institution_Name
+.Institution_Name, .Bachelors, .Bachelors_summary, .Masters_title, .Masters_summary, .Certificates, .Certificate_name, .Certificate_summary, .Clubs_and_Contributions
 {
     
     display: block;
@@ -25,20 +25,9 @@
 }
 
 /* Masters field */
-.Masters_title
-{
-    text-align: center;
-   
-}
 
-.Masters_summary
-{
-    display: block;
-    text-align: center;
-    
-}
 
-.Masters_Description
+.Masters_Description, .Bachelors_Description, .Certificate_description
 {
     /* flexbox */
     display:flex;
@@ -50,7 +39,7 @@
     gap: 50px;
 }
 
-.Masters_Courses
+.Masters_Courses, .Bachelors_Courses
 {
     /* Skills = 400 px  and 50px gap then calculate the course width by ( width of device - 400 - 50); dynamic to different devices and limits hardcoding
             "felxibile given the remaining space"
@@ -67,11 +56,11 @@
     margin-bottom: -10px;
 }
 
-.IS_name, .SS_name, .NS_name, .DA_name, .LB_name
+.IS_name, .SS_name, .NS_name, .DA_name, .LB_name, .DS_name, .DB_name, .OS_name, .SE_name, .AT_name, .AD_name, .SP_name
 {
     text-align: center;
 }
-.IS, .SS, .NS, .DA, .LB
+.IS, .SS, .NS, .DA, .LB, .DS, .DB, .OS, .SE, .AT, .AD, .SP
 {
     display: inline-block;
 
@@ -92,7 +81,7 @@
 
 
 
-.Masters_Skills
+.Masters_Skills, .Bachelor_Skills
 {
     /* flex = flexible to change according to available space 
             FLEXBOX PRINCIPLE: tries to make things fit so if there is not enough spaces, it will automatically change the width 
@@ -100,38 +89,95 @@
     */
     flex-shrink: 0;
     width: 400px;
+
+    /* to always have the skills be in the center of the box 
+        -overrides the align-items: flex-start so that the skills appears in the middle (vertically) of it's parent box
+    */
+    align-self: center;
    
   
 }
 
 .SkillsList
 {
-    display: inline-block;
     width: 200px;
     text-align: center;
-    margin-top: 100px;
 }
 
 
-/* Bachelors field */
+/* certificates */
 
-.Bachelors_Description
+.Covered_topics
 {
-    display:flex;
+    display: inline-block;
+
+
+    /* take 45% of the parent box */
+    width: 100%;
+    
+
+    /* install spacing between each course description 
+        margin: 2% == 2% margin on all side : top, bottom, left, right
+            But be careful how you calculate this: 
+                45% + 2% + 45% + 2% = 94% < 100% --> good 
+                45% + 5% + 45% + 5% = 100% --> bad, it will not fit in the parent box and will go to the next line
+
+        ALSO, THIS IS ABOUT IF IT FITS IN THE SAME ROW: meaning that it width + margin should always be less  
+        */
+    margin:2%;
+    margin-left: 400px;
+    vertical-align: top;
+}
+
+.Received_date
+{
+    /* flex = flexible to change according to available space 
+            FLEXBOX PRINCIPLE: tries to make things fit so if there is not enough spaces, it will automatically change the width 
+                flex-shrink: 0  --> prevents the shrinking. If it was 1, then you gave it permission to shrink 
+    */
+    flex-shrink: 0;
+    width: 400px;
+
+    /* to always have the skills be in the center of the box 
+        -overrides the align-items: flex-start so that the skills appears in the middle (vertically) of it's parent box
+    */
+    align-self: center;
+    margin-right: 100px;
+   
+  
+}
+
+
+/* clubs and organizations */
+.Club_Description
+{
+    display: flex;
     align-items: flex-start;
     gap: 50px;
 }
 
-
-.Bachelors
+.Clubs
 {
-    display: block;
-    text-align: center;
+    flex: 1;
 }
 
-.Bachelors_summary
+
+.ACM, .Freshmen_Mentor_Program, .Undergraduate_Success_Program
 {
-    display: block;
     text-align: center;
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    vertical-align: top;
 }
 
+.Organization_Name
+{
+    margin-bottom: 0px;
+}
+
+.Role
+{
+    display: inline-block;
+    vertical-align: top;
+}
