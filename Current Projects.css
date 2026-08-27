@@ -1,0 +1,24 @@
+.Current_Projects
+{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+
+.C_P
+{
+    display: block;
+    text-align: center;
+}
+
+
+.Personal_Website, .SaaS, .AI
+{
+    flex: 40%;
+    margin: 2%;
+    width: 20%;
+    vertical-align: top;
+    
+}

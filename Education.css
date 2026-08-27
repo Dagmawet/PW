@@ -152,7 +152,7 @@
 .Club_Description
 {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 50px;
 }
 
