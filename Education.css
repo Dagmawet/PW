@@ -9,7 +9,7 @@
 
 body
 {
-    background-color: color-mix(in hsl shorter hue, rgb(143, 241, 213) 25%, rgb(27, 209, 233) 45%);
+    background-color: color-mix(in hsl shorter hue, rgb(143, 241, 213) 25%, rgb(164, 234, 244) 45%);
 }
 
 .Navigation_Buttons
