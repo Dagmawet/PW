@@ -7,6 +7,17 @@
     justify-content: center;
 }
 
+h5
+{
+    text-align: center;
+}
+
+body
+{
+    background-color: hsl(from rgb(145, 191, 239) h s l);
+}
+
+
 .categories
 {
     /* a layout organizer = flex. Center the categories and personalize the font display */

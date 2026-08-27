@@ -7,6 +7,11 @@
 }
 
 
+body
+{
+    background-color: color-mix(in hsl, rgb(236, 248, 177) 25%, rgb(145, 202, 246) 15%); 
+}
+
 .C_P
 {
     display: block;
