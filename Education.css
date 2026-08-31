@@ -17,9 +17,6 @@ body
     display: flex;
     justify-content: end;
     align-items: center;
-    
-    
-    
 }
 
 .Institution_Name, .Bachelors, .Bachelors_summary, .Masters_title, .Masters_summary, .Certificates, .Certificate_name, .Certificate_summary, .Clubs_and_Contributions

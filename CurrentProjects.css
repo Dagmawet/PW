@@ -1,9 +1,10 @@
 .Current_Projects
 {
     display: flex;
+    align-items: flex-start;
     gap: 50px;
     flex-wrap: wrap;
-
+    padding: 4%;
 }
 
 
@@ -21,9 +22,15 @@ body
 
 .Personal_Website, .SaaS, .AI
 {
-    flex: 40%;
-    margin: 2%;
-    width: 20%;
-    vertical-align: top;
+    flex: 1;
+    margin-left: 1%;
     
+    
+}
+
+
+.Navigation_Buttons
+{
+    display: flex;
+    justify-content: center;
 }
