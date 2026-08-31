@@ -15,8 +15,15 @@ body
 .Navigation_Buttons
 {
     display: flex;
-    justify-content: end;
-    align-items: center;
+    flex-direction: column;
+    width: 150px;
+
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    height: 60px;
+    background-color: white;
+    
 }
 
 .Institution_Name, .Bachelors, .Bachelors_summary, .Masters_title, .Masters_summary, .Certificates, .Certificate_name, .Certificate_summary, .Clubs_and_Contributions
