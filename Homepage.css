@@ -22,20 +22,22 @@ body
 {
     /* a layout organizer = flex. Center the categories and personalize the font display */
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+
+    /* safely center so that everything fits --> fixes the education button disappearing */
+    justify-content: safe center;
     align-items: center;
     height: 500px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-width: 700;
+    font-weight: 700;
     font-size: 20px;
     padding-top: 100px;
-    width: 0;
-
     
 }
 
 button
 {
+    flex-shrink: 0;
     /* Padding for each button for visual preferences  
         "Spacing on the inside of an element = padding"*/
     padding-top: 300px;
@@ -96,11 +98,11 @@ button:hover
     
 }
 
-.Education-image
+/* .Education-image
 {
     /* Set how much space there is between the words, a way to preserve the space since spaces are automatically ignored */
-    width: 5%;
+    /* width: 5%;
     margin-left: 8px;
     object-position: top;
     
-}
+} */ 
