@@ -7,10 +7,9 @@
     justify-content: center;
 }
 
-h5
+h4
 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 body
