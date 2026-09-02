@@ -1,0 +1,32 @@
+
+
+.Past_Projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.VR_Game
+{
+    flex: 0.3;
+    
+}
+
+.Navigation_Buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    /* width: 150px;
+
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    height: 60px;
+    background-color: white; */
+    
+}
