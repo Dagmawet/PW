@@ -7,11 +7,12 @@
   align-items: left;
   flex-wrap: wrap;
   gap: 20px;
+  vertical-align: top;
 }
 
-.VR_Game
+.VR_Game, .Johnny_English
 {
-    flex: 0.3;
+    flex: 0.4;
     
 }
 
