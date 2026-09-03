@@ -1,3 +1,21 @@
+Header {
+    text-align: center;
+    font-family: Imprima, sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body
+{
+    background-color:color-mix(in hsl shorter hue, blue 30%, green 45%)
+}
+
+
+h4
+{
+    text-align: center;
+}
 
 
 .Past_Projects {
@@ -10,7 +28,7 @@
   vertical-align: top;
 }
 
-.VR_Game, .Johnny_English
+.VR_Game, .Johnny_English, .Peer_Connections
 {
     flex: 0.3;
     
